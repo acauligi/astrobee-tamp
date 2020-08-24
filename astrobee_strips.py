@@ -10,6 +10,11 @@ class STRIPS:
         self.goal = np.array([None, None,None, None,0,None, None,None,None, 0,1,0])
         self.num_objects = 2
         self.num_docks = 3
+        self.operators = ['dock_objA_dockA', 'dock_objA_dockB', 'dock_objA_dockC', \
+                    'dock_objB_dockA', 'dock_objB_dockB', 'dock_objB_dockC', \
+                    'undock_objA_dockA', 'undock_objA_dockB', 'undock_objA_dockC', \
+                    'undock_objB_dockA', 'undock_objB_dockB', 'undock_objB_dockC', \
+                    'grasp_objA', 'grasp_objB']
 
     # predicates
     def gripper_free(self):
